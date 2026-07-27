@@ -20,4 +20,4 @@ Then visit http://localhost:5173
 
 ## Contact
 
-Confidential help 24/7: **(888) 985-4050**
+Confidential help 24/7: **(888) 296-5772**
