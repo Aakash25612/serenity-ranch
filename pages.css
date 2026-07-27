@@ -1185,57 +1185,78 @@
   --rec-cream: #f7f4ed;
 }
 
-.rec-intro {
-  background: var(--rec-cream);
-  padding: 3rem 1.5rem 1.5rem;
+.rec-hero-overlay {
+  position: relative;
+  min-height: min(78vh, 640px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.rec-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url("images/recovery-hero.jpg") center 40% / cover no-repeat;
+  transform: scale(1.02);
+}
+
+.rec-hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 39, 68, 0.72) 0%,
+    rgba(15, 39, 68, 0.55) 45%,
+    rgba(15, 39, 68, 0.7) 100%
+  );
+}
+
+.rec-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
   text-align: center;
 }
 
-.rec-intro-inner {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.rec-intro h1 {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--rec-navy);
-}
-
-.rec-script {
-  margin: 0.85rem 0 1.1rem;
-  font-family: "Great Vibes", cursive;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--rec-gold);
-  line-height: 1.2;
-}
-
-.rec-lede {
+.rec-hero-content h1 {
   margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.08rem;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+
+.rec-hero-overlay .rec-script {
+  margin: 0.9rem 0 1.15rem;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(1.55rem, 3.2vw, 2.15rem);
+  color: var(--rec-gold);
+  line-height: 1.25;
+}
+
+.rec-hero-overlay .rec-lede {
+  margin: 0 auto;
+  max-width: 38rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
   line-height: 1.7;
-  color: #2c333a;
+  color: rgba(255, 255, 255, 0.92);
 }
 
+.rec-intro,
 .rec-hero {
-  background: var(--rec-cream);
-  padding: 0.5rem 0 0;
-}
-
-.rec-hero img {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  display: block;
+  display: none;
 }
 
 .rec-services {
   background: var(--rec-cream);
-  padding: 2rem 1.5rem 1rem;
+  padding: 2.5rem 1.5rem 1rem;
 }
 
 .rec-services-inner {
@@ -1245,10 +1266,10 @@
 
 .rec-row {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 1.75rem;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1.75rem 0;
   border-bottom: 1px solid var(--rec-gold);
 }
 
@@ -1258,7 +1279,7 @@
 
 .rec-row img {
   width: 100%;
-  height: 170px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -1291,18 +1312,18 @@
 .rec-copy p {
   margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.02rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: #3a424a;
 }
 
 .rec-bullets {
   list-style: none;
-  margin: 0.75rem 0 0;
+  margin: 0.85rem 0 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.3rem 1.25rem;
+  gap: 0.35rem 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-size: 0.82rem;
   color: var(--rec-navy);
@@ -1315,7 +1336,7 @@
 
 .rec-close {
   max-width: 640px;
-  margin: 0.5rem auto 2.5rem;
+  margin: 0.75rem auto 2.5rem;
   padding: 1.25rem 1.5rem;
   text-align: center;
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -1327,21 +1348,11 @@
   border-bottom: 1px solid var(--rec-gold);
 }
 
-.page-band--text {
-  grid-template-columns: 1fr;
-  justify-items: center;
-  text-align: center;
-}
-
-.page-band--text .page-band-copy {
-  text-align: center;
-}
-
-.why-brand-bar--simple {
-  grid-template-columns: 1fr 1fr;
-}
-
 @media (max-width: 900px) {
+  .rec-hero-overlay {
+    min-height: 70vh;
+  }
+
   .rec-row {
     grid-template-columns: 1fr;
   }
@@ -1353,8 +1364,12 @@
   .rec-bullets {
     grid-template-columns: 1fr;
   }
-
-  .why-brand-bar--simple {
-    grid-template-columns: 1fr;
-  }
 }
+
+.page-band--text {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+.page-band--text .page-band-copy { text-align: center; }
+.why-brand-bar--simple { grid-template-columns: 1fr 1fr; }
