@@ -1387,3 +1387,197 @@
 .why-brand-bar--simple {
   grid-template-columns: 1fr 1fr;
 }
+
+/* ========== WELCOME PAGE (flyer match) ========== */
+.welcome-page {
+  --wel-navy: #002147;
+  --wel-gold: #c5a059;
+  --wel-cream: #fdfcf9;
+  background: var(--wel-cream);
+}
+
+.wel-main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.75rem 1.5rem 3rem;
+}
+
+.wel-head {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.wel-head h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--wel-navy);
+}
+
+.wel-star-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.85rem auto 1rem;
+  max-width: 280px;
+}
+
+.wel-star-rule span {
+  flex: 1;
+  height: 1px;
+  background: var(--wel-gold);
+}
+
+.wel-brand {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--wel-navy);
+}
+
+.wel-sub {
+  margin: 0.4rem 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--wel-navy);
+}
+
+.wel-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 2.75rem;
+  align-items: start;
+}
+
+.wel-letter p {
+  margin: 0 0 1rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #1c1c1c;
+}
+
+.wel-letter strong {
+  font-weight: 700;
+  color: var(--wel-navy);
+}
+
+.wel-hello {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  color: var(--wel-navy) !important;
+  margin-bottom: 0.85rem !important;
+}
+
+.wel-sign {
+  margin-top: 1.75rem;
+}
+
+.wel-sincerely {
+  margin: 0 0 0.35rem !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 0.95rem !important;
+  color: var(--wel-navy) !important;
+}
+
+.wel-script {
+  margin: 0 0 0.55rem !important;
+  font-family: "Great Vibes", cursive !important;
+  font-size: 2.55rem !important;
+  line-height: 1 !important;
+  color: var(--wel-navy) !important;
+}
+
+.wel-name {
+  margin: 0 !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  color: var(--wel-navy) !important;
+}
+
+.wel-title {
+  margin: 0.2rem 0 0 !important;
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-style: italic !important;
+  font-size: 0.98rem !important;
+  color: #2a2a2a !important;
+}
+
+.wel-photo {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 1.35rem;
+  display: block;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid var(--wel-gold);
+  box-shadow: 0 6px 20px rgba(0, 33, 71, 0.08);
+}
+
+.wel-features {
+  display: flex;
+  flex-direction: column;
+}
+
+.wel-feature {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid var(--wel-gold);
+}
+
+.wel-feature:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.wel-ico {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--wel-navy);
+  border: 1.5px solid var(--wel-gold);
+  display: grid;
+  place-items: center;
+}
+
+.wel-feature h3 {
+  margin: 0 0 0.28rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+  color: var(--wel-navy);
+}
+
+.wel-feature p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+@media (max-width: 900px) {
+  .wel-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .wel-photo {
+    max-width: 280px;
+  }
+}
