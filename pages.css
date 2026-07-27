@@ -1,0 +1,84 @@
+/* Inner pages — exact flyer layouts */
+.page-main {
+  background: #f7f3ec;
+  min-height: 60vh;
+}
+
+.flyer-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2.5rem;
+}
+
+.flyer-exact {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 8px 32px rgba(18, 26, 34, 0.12);
+  background: #fff;
+}
+
+.page-admissions {
+  background: var(--navy);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.page-admissions p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.page-admissions a.phone-lg {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 1rem 1.75rem;
+  font-weight: 700;
+}
+
+.page-admissions a.phone-lg span {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.page-admissions a.phone-lg strong {
+  font-size: 1.35rem;
+  letter-spacing: 0.03em;
+}
+
+.subnav {
+  background: var(--navy-deep);
+  border-bottom: 1px solid rgba(197, 180, 158, 0.2);
+}
+
+.subnav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  justify-content: center;
+}
+
+.subnav a {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.subnav a:hover,
+.subnav a.active {
+  color: var(--gold);
+}
+
+.main-nav a.active {
+  color: var(--gold);
+}
