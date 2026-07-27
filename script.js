@@ -18,5 +18,5 @@ if (toggle && nav) {
 }
 
 document.querySelector(".hero-video")?.addEventListener("click", () => {
-  alert("Video placeholder — connect your Serenity Ranch intro video here.");
+  alert("Video placeholder - connect your Serenity Ranch intro video here.");
 });
