@@ -1373,3 +1373,17 @@
 }
 .page-band--text .page-band-copy { text-align: center; }
 .why-brand-bar--simple { grid-template-columns: 1fr 1fr; }
+
+.page-band--text {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.page-band--text .page-band-copy {
+  text-align: center;
+}
+
+.why-brand-bar--simple {
+  grid-template-columns: 1fr 1fr;
+}
