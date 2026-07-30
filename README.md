@@ -2,7 +2,7 @@
 
 Landing site for **Serenity Ranch First Responder Recovery**.
 
-Static HTML/CSS/JS — ready for [Vercel](https://vercel.com) with zero build step.
+Static HTML/CSS/JS - ready for [Vercel](https://vercel.com) with zero build step.
 
 ## Pages
 
