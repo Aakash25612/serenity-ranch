@@ -216,17 +216,20 @@ h3 {
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.8rem, 6vw, 4.6rem);
-  letter-spacing: 0.04em;
+  font-size: clamp(1.75rem, 3.8vw, 2.85rem);
+  letter-spacing: 0.02em;
   font-weight: 700;
   color: var(--white);
+  max-width: 18ch;
+  line-height: 1.18;
 }
 
 .hero-sub {
   margin: 1.1rem 0 0;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 400;
-  max-width: 32rem;
+  max-width: 36rem;
+  line-height: 1.55;
   color: rgba(255, 255, 255, 0.92);
 }
 
@@ -396,6 +399,243 @@ h3 {
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.1em;
+}
+
+/* Home statement */
+.home-statement {
+  background: var(--cream-soft);
+  padding: 3.25rem 1.5rem;
+  border-bottom: 1px solid rgba(197, 180, 158, 0.35);
+}
+
+.home-statement-inner {
+  max-width: 52rem;
+}
+
+.home-statement p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  color: var(--navy);
+  text-align: center;
+}
+
+/* Shared home prose sections */
+.home-prose {
+  background: var(--white);
+  padding: 4.5rem 1.5rem;
+}
+
+.home-prose--cream {
+  background: var(--cream);
+}
+
+.home-prose--split {
+  background: var(--cream-soft);
+}
+
+.home-prose-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-prose-inner h2,
+.continuum h2,
+.family-services h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  color: var(--navy);
+  letter-spacing: 0.02em;
+}
+
+.home-prose-inner p,
+.continuum-copy p,
+.home-split p,
+.family-services-grid p {
+  margin: 0 0 1rem;
+  color: #4a5158;
+  line-height: 1.7;
+}
+
+.home-prose-inner p:last-child,
+.continuum-copy p:last-child,
+.home-split p:last-child {
+  margin-bottom: 0;
+}
+
+.section-eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--gold-dark);
+}
+
+.section-eyebrow--center {
+  text-align: center;
+}
+
+.star-divider--center {
+  text-align: center;
+}
+
+.home-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.home-split h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: var(--navy);
+}
+
+.continuum a,
+.home-split a,
+.family-services a,
+.footer-brand a,
+.program-link {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.continuum a:hover,
+.home-split a:hover,
+.family-services a:hover,
+.footer-brand a:hover,
+.program-link:hover {
+  color: var(--navy);
+}
+
+.program-link {
+  color: #e8d7b8;
+}
+
+.program-link:hover {
+  color: var(--white);
+}
+
+/* Continuum */
+.continuum {
+  background: var(--white);
+  padding: 4.75rem 1.5rem;
+  text-align: center;
+}
+
+.continuum-copy {
+  max-width: 46rem;
+  margin: 0 auto 2.75rem;
+  text-align: left;
+}
+
+.continuum-flow {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.continuum-flow li:not(.continuum-arrow) {
+  width: 100%;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(197, 180, 158, 0.55);
+  background: var(--cream);
+  text-align: center;
+}
+
+.continuum-flow strong {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.continuum-flow span {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: #5a6168;
+}
+
+.continuum-arrow {
+  color: var(--gold-dark);
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0.15rem 0;
+}
+
+/* Family of services */
+.family-services {
+  background: var(--navy);
+  color: var(--white);
+  padding: 4.75rem 1.5rem;
+  text-align: center;
+}
+
+.family-services h2 {
+  color: var(--white);
+}
+
+.family-services .section-lead {
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 2.5rem;
+}
+
+.family-services .star-divider svg {
+  fill: #c5b49e;
+}
+
+.family-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  text-align: left;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.family-services-grid h3 {
+  margin: 0 0 0.85rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.family-services-grid p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(197, 180, 158, 0.55);
+  padding-bottom: 0.15rem;
+}
+
+.text-link:hover {
+  color: var(--white) !important;
+  border-bottom-color: var(--white);
 }
 
 /* Challenges */
@@ -881,6 +1121,16 @@ h3 {
 
   .about-content {
     padding: 3rem 1.5rem;
+  }
+
+  .home-split,
+  .family-services-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .hero-copy h1 {
+    max-width: none;
   }
 
   .cta-inner {
