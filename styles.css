@@ -497,7 +497,6 @@ h3 {
 .continuum a,
 .home-split a,
 .family-services a,
-.footer-brand a,
 .program-link {
   color: var(--gold-dark);
   text-decoration: underline;
@@ -507,7 +506,6 @@ h3 {
 .continuum a:hover,
 .home-split a:hover,
 .family-services a:hover,
-.footer-brand a:hover,
 .program-link:hover {
   color: var(--navy);
 }
@@ -938,7 +936,23 @@ h3 {
   margin-top: 0.45rem;
   font-size: 0.65rem;
   letter-spacing: 0.06em;
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.45;
+  max-width: 18rem;
+}
+
+.footer-brand a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  font-weight: 600;
+  -webkit-tap-highlight-color: rgba(197, 180, 158, 0.35);
+}
+
+.footer-brand a:hover,
+.footer-brand a:focus-visible {
+  color: var(--white);
 }
 
 .footer-nav {
@@ -1146,7 +1160,22 @@ h3 {
 
   .footer-brand {
     justify-content: center;
-    text-align: left;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-brand small {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+    font-size: 0.72rem;
+    line-height: 1.55;
+  }
+
+  .footer-brand a {
+    display: inline;
+    padding: 0.15rem 0;
   }
 
   .footer-legal {
@@ -1163,6 +1192,18 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  .footer-brand small {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    max-width: 16.5rem;
+  }
+
+  .footer-brand a {
+    display: inline;
+    padding: 0.2rem 0;
+    line-height: 1.5;
+  }
+
   .challenge-grid {
     grid-template-columns: repeat(2, 1fr);
   }
