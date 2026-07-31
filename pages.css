@@ -467,17 +467,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
+  align-self: stretch;
 }
 
 .exp-grid img {
   width: 100%;
-  height: 170px;
+  height: 180px;
   object-fit: cover;
+  display: block;
 }
 
 .exp-grid-wide {
   grid-column: 1 / -1;
-  height: 220px !important;
+  height: 200px !important;
 }
 
 .healing-block {
