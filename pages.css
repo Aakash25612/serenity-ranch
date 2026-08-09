@@ -1616,3 +1616,168 @@
     max-width: 280px;
   }
 }
+
+/* ========== OUR TEAM / CLINICAL LEADERSHIP ========== */
+.team-page {
+  background: #f9f8f0;
+}
+
+.team-main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.team-head {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.team-head h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.55rem, 3.2vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #0f2744;
+}
+
+.team-star-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem auto 1.15rem;
+  max-width: 22rem;
+}
+
+.team-star-rule span {
+  flex: 1;
+  height: 1px;
+  background: #c5a059;
+}
+
+.team-tagline {
+  margin: 0 0 0.85rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #c5a059;
+}
+
+.team-cats {
+  margin: 0 0 1.35rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #0f2744;
+}
+
+.team-cats span {
+  color: #c5a059;
+  margin: 0 0.2rem;
+}
+
+.team-intro {
+  margin: 0 auto;
+  max-width: 46rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: #0f2744;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.team-member {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+.team-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid #c5a059;
+  background: #e8e4dc;
+  display: block;
+}
+
+.team-photo--square {
+  border-radius: 4px;
+}
+
+.team-photo--circle {
+  border-radius: 50%;
+  object-position: center 20%;
+}
+
+.team-photo--soft {
+  border-radius: 18px;
+}
+
+.team-copy h2 {
+  margin: 0 0 0.35rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  color: #0f2744;
+}
+
+.team-role {
+  margin: 0 0 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #c5a059;
+}
+
+.team-copy p {
+  margin: 0 0 0.75rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: #2c333a;
+}
+
+.team-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.team-copy em {
+  font-style: italic;
+}
+
+@media (max-width: 760px) {
+  .team-member {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 1.15rem;
+  }
+
+  .team-photo {
+    width: min(220px, 70vw);
+  }
+
+  .team-copy {
+    text-align: left;
+  }
+
+  .team-copy h2,
+  .team-role {
+    text-align: center;
+  }
+}
