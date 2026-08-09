@@ -1255,6 +1255,10 @@ a.footer-email:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .footer-email {
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
