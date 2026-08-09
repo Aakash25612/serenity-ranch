@@ -152,16 +152,18 @@ h3 {
   justify-content: flex-end;
   gap: 0.35rem;
   max-width: 15rem;
-  font-size: 0.68rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 1.35;
-  color: #ffffff;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .header-location svg {
   flex-shrink: 0;
-  color: #ffffff;
+  color: #ffffff !important;
+  stroke: #ffffff;
 }
 
 .nav-toggle {
