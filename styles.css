@@ -156,12 +156,12 @@ h3 {
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.35;
-  color: rgba(255, 255, 255, 0.78);
+  color: #ffffff;
 }
 
 .header-location svg {
   flex-shrink: 0;
-  color: var(--gold);
+  color: #ffffff;
 }
 
 .nav-toggle {
