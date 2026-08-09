@@ -146,11 +146,22 @@ h3 {
   transform: translateY(-1px);
 }
 
-.header-cta-sub {
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  color: var(--navy);
+.header-location {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  max-width: 15rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.header-location svg {
+  flex-shrink: 0;
+  color: var(--gold);
 }
 
 .nav-toggle {
@@ -1103,6 +1114,13 @@ h3 {
     justify-content: center;
     font-size: 1rem;
     padding: 0.8rem 1rem;
+  }
+
+  .header-location {
+    justify-content: center;
+    max-width: none;
+    text-align: center;
+    font-size: 0.72rem;
   }
 
   .nav-toggle {
