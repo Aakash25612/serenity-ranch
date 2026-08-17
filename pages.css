@@ -1728,24 +1728,13 @@
 
 .team-photo {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center center;
   border: 2px solid #c5a059;
   background: #e8e4dc;
   display: block;
-}
-
-.team-photo--square {
-  border-radius: 4px;
-}
-
-.team-photo--circle {
-  border-radius: 50%;
-}
-
-.team-photo--soft {
-  border-radius: 18px;
+  border-radius: 6px;
 }
 
 .team-copy h2 {
