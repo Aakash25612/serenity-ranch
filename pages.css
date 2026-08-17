@@ -1730,7 +1730,7 @@
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   border: 2px solid #c5a059;
   background: #e8e4dc;
   display: block;
@@ -1742,7 +1742,6 @@
 
 .team-photo--circle {
   border-radius: 50%;
-  object-position: center 20%;
 }
 
 .team-photo--soft {
