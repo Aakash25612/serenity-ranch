@@ -1286,6 +1286,10 @@ a.footer-email:hover {
     grid-template-columns: 1fr 1fr;
   }
 
+  .gallery img:nth-child(4) {
+    display: block;
+  }
+
   .gallery img:nth-child(5) {
     display: none;
   }
